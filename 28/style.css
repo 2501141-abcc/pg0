@@ -1,0 +1,606 @@
+body{
+    margin: 0;
+}
+
+.loadingimg{
+    width: 100%;
+}
+
+#H1loading{
+    position: fixed;
+    background-size: cover; /* 画像を画面全体に拡大 */
+    background-position: center; /* 中央に配置 */
+    background-repeat: no-repeat; /* 繰り返しを防止 */
+    width: 100%;
+    z-index: 100; /* コンテンツの上に表示 */
+}
+
+#H2loading{
+    position: fixed;
+    left:33%;
+	top: 20%;
+    text-align: center;
+    z-index: 100; /* コンテンツの上に表示 */
+    color: #487f82;
+}
+
+.Hwave-text {
+  font-size: 4rem;
+  text-align: center;
+  margin: 2rem;
+  font-family: Arial, sans-serif;
+}
+
+.Hwave-text span {
+  display: inline-block;
+  animation: wave 1.2s ease-in-out infinite;
+}
+
+@keyframes wave {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-20px); }
+}
+
+/* 各文字のアニメーション遅延設定 */
+.Hwave-text span:nth-child(1) { animation-delay: 0.0s; }
+.Hwave-text span:nth-child(2) { animation-delay: 0.1s; }
+.Hwave-text span:nth-child(3) { animation-delay: 0.2s; }
+.Hwave-text span:nth-child(4) { animation-delay: 0.3s; }
+.Hwave-text span:nth-child(5) { animation-delay: 0.4s; }
+.Hwave-text span:nth-child(6) { animation-delay: 0.5s; }
+.Hwave-text span:nth-child(7) { animation-delay: 0.6s; }
+.Hwave-text span:nth-child(8) { animation-delay: 0.7s; }
+.Hwave-text span:nth-child(9) { animation-delay: 0.8s; }
+
+
+#A1loading{
+    position: fixed;
+    background-size: cover; /* 画像を画面全体に拡大 */
+    background-position: center; /* 中央に配置 */
+    background-repeat: no-repeat; /* 繰り返しを防止 */
+    width: 100%;
+    z-index: 100; /* コンテンツの上に表示 */
+}
+
+#A2loading{
+    position: fixed;
+    left: 21%;
+	top: 20%;
+    text-align: center;
+    z-index: 100; /* コンテンツの上に表示 */
+    font-size: 35px;
+}
+
+
+
+#R1loading{
+    position: fixed;
+    background-size: cover; /* 画像を画面全体に拡大 */
+    background-position: center; /* 中央に配置 */
+    background-repeat: no-repeat; /* 繰り返しを防止 */
+    width: 100%;
+    z-index: 100; /* コンテンツの上に表示 */
+}
+
+#R2loading{
+    position: fixed;
+    left:28%;
+	top: 20%;
+    text-align: center;
+    z-index: 100; /* コンテンツの上に表示 */
+}
+
+
+
+#G1loading{
+    position: fixed;
+    background-size: cover; /* 画像を画面全体に拡大 */
+    background-position: center; /* 中央に配置 */
+    background-repeat: no-repeat; /* 繰り返しを防止 */
+    width: 100%;
+    z-index: 100; /* コンテンツの上に表示 */
+}
+
+#G2loading{
+    width: 35%;
+    position: fixed;
+    left:35%;
+	top: 20%;
+    text-align: center;
+    z-index: 100; /* コンテンツの上に表示 */
+}
+
+
+
+#M1loading{
+    position: fixed;
+    background-size: cover; /* 画像を画面全体に拡大 */
+    background-position: center; /* 中央に配置 */
+    background-repeat: no-repeat; /* 繰り返しを防止 */
+    width: 200%;
+    z-index: 100; /* コンテンツの上に表示 */
+}
+
+#M2loading{
+    width: 35%;
+    position: fixed;
+    left:35%;
+	top: 20%;
+    text-align: center;
+    z-index: 100; /* コンテンツの上に表示 */
+}
+
+#M2loading strong{
+    color: #fffdfa;
+}
+
+nav{
+    background-image: url('image/kuramewa1.png');
+    background-size: cover;
+    color: #ffffff;
+    padding: 20px 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 70px;
+    box-sizing: border-box;
+    z-index: 2; /* 最前面に表示 */
+}
+
+nav ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+}
+
+nav ul li a:hover {
+    background-color: #555555;
+}
+
+.titlediv{
+    text-align: center;
+}
+
+/*ここまでが共通の設定*/
+
+
+#hobby{
+    height: 100%;
+    margin: 0;
+    padding: 20px;
+    background-image: url('image/hobby/fuwa90.png');
+    background-size: cover; /* 画像を画面全体に拡大・縮小 */
+    background-repeat: no-repeat; /* 繰り返しを防ぐ */
+    background-position: center; /* 中央に配置 */
+}
+
+.Himg{
+    display: inline-block;
+    width: 50%;
+}
+
+.Hmaindiv img{
+    float: right;
+    position: fixed; right: 5%; /*右に固定*/
+}
+
+.Hitem{
+    color: white;
+    padding-left: 10px;
+    padding-bottom: 20px;
+    border: 1px solid #dddddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin: 20px;
+    filter: grayscale(100%); /* 白黒に変化 */
+    transition: 0.3s ease; /* スムーズな変化を追加 */
+}
+
+.Hitem:hover{
+    filter: grayscale(0%); /* 白黒に変化 */
+    color: black;
+}
+
+.Hitem h2{
+    color: rgb(220, 0, 183);
+    text-decoration: underline;
+    text-decoration-style: double;
+    text-decoration-color: rgb(220, 0, 183);
+}
+
+#H1{
+    background-image: url('image/hobby/preview-page0.jpg');
+    background-size: cover; /* 全体を覆う */
+}
+
+#H2{
+    background-image: url('image/hobby/Flat-Abstract-Graphics-31844349-1.jpg');
+    background-size: cover; /* 全体を覆う */
+}
+
+#H3{
+    background-image: url('image/hobby/vector-free-bg-illust-03.jpeg');
+    background-size: cover; /* 全体を覆う */
+}
+
+#H4{
+    background-image: url('image/hobby/handdrawn-orange-background-with-captivating-touch-blue_513203-737.avif');
+    background-size: cover; /* 全体を覆う */
+}
+
+.taitoru{
+    font-size: 70px;
+    font-weight: bold;
+    color: transparent;
+    background-size: cover;
+    -webkit-background-clip: text; /* 必要に応じてWebkit対応 */
+}
+
+#taitoru1{
+    background-image: url('image/hobby/1ee68e5d-ea90-4e03-885f-60859358592c_base_resized.jpg'); /*「趣味」の文字に重ねる画像*/
+}
+/*ここまでが趣味のページの設定*/
+
+
+#Abody{
+    background-image: url('image/anime/anime-city-street-with-buildings-and-clouds-in-the-sky-generative-ai_1034474-81515.avif');
+    background-size: cover; /* 画面全体に画像を拡大または縮小 */
+    background-position: center; /* 画像を中央に配置 */
+    background-repeat: no-repeat; /* 画像の繰り返しを防ぐ */
+}
+
+#taitoru2{
+    background-image: url('image/anime/47fbffce40088e9524c24e341d418429_w.jpeg'); /*「アニメ」の文字に重ねる画像*/
+}
+
+#Atitle{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background: linear-gradient(45deg, #ff7e5f, #feb47b, #86a8e7, #91eae4);
+    border-radius: 5px;
+}
+
+.Aitem{
+    margin: 30px;
+    padding: 10px;
+    border: 1px ridge #dddddd;
+    border-radius: 5px;
+}
+
+#A3{
+    margin-top: 30px;
+    margin-left: 30px;
+    margin-right: 30px;
+    padding: 10px;
+    border: 1px ridge #dddddd;
+    border-radius: 5px;
+}
+
+.Aimg{
+    margin-top: 30px;
+    width: 30%;
+    float: right;
+}
+
+#A1{
+    background-color: rgba(255, 248, 248, 0.733); /* 赤みがかった薄い色 */
+}
+
+#A2{
+    background-color: rgba(54, 231, 254, 0.575); /* 赤みがかった薄い色 */
+}
+
+#A3{
+    background-color: rgba(133, 255, 68, 0.623); /* 赤みがかった薄い色 */
+}
+/*ここまでがアニメのページの設定*/
+
+
+#Rbody{
+    background-image: url('image/read/OIP.jpg');
+    background-size: cover; /* 画面全体に画像を拡大または縮小 */
+    background-position: center; /* 画像を中央に配置 */
+    background-repeat: no-repeat; /* 画像の繰り返しを防ぐ */
+}
+
+#Rtitle{
+    width: 100%;
+    background-color: #555555;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-image: url('image/read/3a68e88a9acf22517a90ca2b55530fae_t.jpeg');
+}
+
+#taitoru3{
+    color: #6ff255;
+}
+
+.Rimg{
+    margin-top: 10px;
+    width: 15%;
+    padding-right: 10px;
+    float: right;
+    opacity: 0;
+    transition: opacity 0.5s ease; /* ゆっくり表示・非表示 */
+}
+
+#R2img{
+    width: 14%;
+    padding-right: 10px;
+    float: right;
+    opacity: 0;
+    transition: opacity 0.5s ease; /* ゆっくり表示・非表示 */
+}
+
+.Ritem{
+    width: 96%;
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+}
+
+#R3{
+    width: 96%;
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#R1{
+    background-color: rgba(23, 229, 232, 0.9);
+}
+
+#R2{
+    background-color: rgba(15, 108, 189, 0.9);
+}
+
+#R3{
+    background-color: rgba(4, 123, 10, 0.9);
+}
+
+#R1:hover img{
+    opacity: 1; /* ホバー時に画像を表示 */
+}
+
+#R2:hover img{
+    opacity: 1; /* ホバー時に画像を表示 */
+}
+
+#R3:hover img{
+    opacity: 1; /* ホバー時に画像を表示 */
+}
+
+button{
+    width: 20%;
+    margin: 10px;
+    padding: 10px;
+}
+/*ここまでが読書のページの設定*/
+
+
+#Gbody{
+    background-color: #555555;
+    background-size: cover; /* 画面全体に画像を拡大または縮小 */
+    background-position: center; /* 画像を中央に配置 */
+    background-repeat: no-repeat; /* 画像の繰り返しを防ぐ */
+}
+
+#Gtitle{
+    width: 100%;
+    background-color: #555555;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-image: url('image/game/desktop-wallpaper-switch-it-out-nintendo-switch-controller.jpg');
+}
+
+#taitoru4{
+    background-color: #740125;
+}
+
+#Gtitle strong{
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+.slideshow {
+    position: relative;
+    width: 400px;
+    height: 350px;
+    overflow: hidden;
+    float: right;
+}
+
+.slide {
+    position: absolute;
+    padding: 5px;
+    width: 95%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+.slide2 {
+    position: absolute;
+    padding: 5px;
+    width: 95%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+.slide3 {
+    position: absolute;
+    padding: 5px;
+    width: 95%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+.visible {
+    opacity: 1;
+}
+
+.visible2 {
+    opacity: 1;
+}
+
+.visible3 {
+    opacity: 1;
+}
+
+.Gitem{
+    width: 96%;
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    color: #fffdfa;
+}
+
+#G1 #G2{
+    margin-bottom: 10px;
+}
+
+#G1{
+    background-image: url('image/game/kaby/E_tMTa2UUAM6ZvX.jpg');
+}
+
+#G2{
+    background-image: url('image/game/Splatoon/afa8d6951c2da744dda933c48fc01c7d.jpg');
+}
+
+#G3{
+    background-image: url('image/game/Minecraft/minecraft-wallpaper-2560x1600_7.jpg');
+    background-size: cover;
+}
+
+#G1 a{
+    color: #fffdfa;
+}
+
+#G2 a{
+    color: #fffdfa;
+}
+
+#G3 a{
+    color: #fffdfa;
+}
+
+#G1 a:hover{
+    background-color: #555555;
+}
+
+#G2 a:hover{
+    background-color: #555555;
+}
+
+#G3 a:hover{
+    background-color: #555555;
+}
+/*ここまでがゲームのページの設定*/
+
+
+
+.Hmain{
+    background-color: #91eae4;
+    padding: 20px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    height: 400px;
+}
+
+.Hmain img{
+    position: fixed;right: 90px;top: 50px;
+    width: 400px;
+    height: 400px;
+}
+
+.Hmain h1{
+    padding-bottom: 40px;
+    margin-top: 60px;
+}
+
+.Hmain h2{
+    padding: 30px;
+    margin-bottom: 30px;
+}
+/*ここまでがhomeのページの設定*/
+
+
+
+#Mbody{
+    background-color: #d765b9;
+    background-size: cover; /* 画面全体に画像を拡大または縮小 */
+    background-position: center; /* 画像を中央に配置 */
+    background-repeat: no-repeat; /* 画像の繰り返しを防ぐ */
+}
+
+#Mtitle{
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-image: url('image/music/istockphoto-1359949106-612x612.jpg');
+}
+
+#taitoru5{
+    background-color: #ec6791;
+}
+
+.Mitem{
+    width: 96%;
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.Mitem iframe{
+    float: right;
+}
+
+#M1{
+    background-image: url('image/music/c9f8c8db83a700d997b1e6b89db470aa.png');
+}
+
+#M2{
+    background-image: url('image/music/moon-full-moon-night-night-sky-wallpaper-0816bda860c02cb8c03ce10e089224fa.jpg');
+}
+
+#M2{
+    color: #fffdfa;
+}
+
+#M2 a{
+    color: #fffdfa;
+}
+
+#M3{
+    background-image: url('image/music/R.jpg');
+}
+
+#M3{
+    color: #fffdfa;
+}
+
+#M3 a{
+    color: #fffdfa;
+}
